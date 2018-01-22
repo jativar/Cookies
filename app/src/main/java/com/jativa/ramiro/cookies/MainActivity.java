@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
     }
 
     /**
@@ -30,6 +32,18 @@ public class MainActivity extends AppCompatActivity {
         // TODO: Find a reference to the TextView in the layout. Change the text.
         TextView statusChangeView = (TextView) findViewById(R.id.status_text_view);
         statusChangeView.setText("I'm so full");
+
+    }
+
+    public void moreCookie(View view) {
+        // TODO: Return to uneating Cookie
+        ImageView cookieImageView = (ImageView) findViewById(R.id.android_cookie_image_view);
+        cookieImageView.setImageResource(R.drawable.before_cookie);
+
+        // TODO: Find a reference to the TextView in the layout. Change the text to eat more cookies.
+        TextView statusChangeView = (TextView) findViewById(R.id.status_text_view);
+        statusChangeView.setText("I'm so hungry!");
+
 
     }
 }
