@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/android_cookie_image_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:scaleType="centerCrop"
         android:src="@drawable/before_cookie" />
@@ -24,8 +24,8 @@
         android:layout_marginTop="16dp"
         android:text="I'm so hungry"
         android:textColor="@android:color/white"
-        android:textSize="34sp"
-        android:textAlignment="center"/>
+        android:textSize="20sp"
+        android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:gravity="center">
 
 
-    <Button
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -49,5 +49,18 @@
         android:onClick="moreCookie"
         android:text="MORE COOKIE" />
     </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
 
 </LinearLayout>
